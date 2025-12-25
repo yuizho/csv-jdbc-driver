@@ -1,0 +1,1001 @@
+id,name,age,city,value
+1,John Doe,30,New York,100.50
+2,Jane Smith,24,Los Angeles,200.75
+3,Peter Jones,45,Chicago,150.20
+4,Alice Brown,28,Houston,300.00
+5,Robert White,39,Phoenix,120.99
+6,Emily Davis,33,Philadelphia,450.10
+7,Michael Miller,52,San Antonio,80.30
+8,Sarah Wilson,29,San Diego,210.60
+9,David Moore,41,Dallas,175.40
+10,Laura Taylor,36,San Jose,280.25
+11,James Anderson,22,Austin,90.15
+12,Linda Thomas,55,Jacksonville,320.80
+13,William Jackson,30,Fort Worth,110.05
+14,Karen White,48,Columbus,250.70
+15,Richard Harris,31,Charlotte,190.35
+16,Betty Martin,26,San Francisco,350.60
+17,Joseph Thompson,40,Indianapolis,130.45
+18,Patricia Garcia,27,Seattle,270.90
+19,Charles Martinez,50,Denver,95.20
+20,Susan Robinson,34,Washington,310.55
+21,Thomas Clark,43,Boston,160.80
+22,Nancy Rodriguez,37,El Paso,230.10
+23,Daniel Lewis,25,Detroit,140.70
+24,Margaret Lee,49,Nashville,290.40
+25,Paul Walker,32,Memphis,105.00
+26,Dorothy Hall,23,Portland,330.20
+27,Mark Allen,51,Oklahoma City,75.80
+28,George Young,38,Las Vegas,260.95
+29,Helen King,29,Louisville,180.10
+30,Steven Wright,42,Baltimore,340.30
+31,Sandra Hill,35,Milwaukee,115.60
+32,Edward Scott,26,Albuquerque,220.45
+33,Carol Green,47,Tucson,165.70
+34,Kenneth Adams,30,Fresno,305.00
+35,Donna Baker,53,Sacramento,85.25
+36,Andrew Nelson,27,Long Beach,245.90
+37,Sharon Carter,46,Kansas City,195.30
+38,Joshua Perez,31,Mesa,360.50
+39,Maria Roberts,24,Atlanta,125.75
+40,Brian Turner,40,Colorado Springs,205.10
+41,Michelle Phillips,33,Raleigh,380.00
+42,Kevin Campbell,54,Miami,70.90
+43,Deborah Parker,28,Virginia Beach,255.60
+44,Ronald Evans,43,Omaha,170.80
+45,Jessica Edwards,36,Oakland,370.40
+46,Timothy Collins,25,Minneapolis,100.20
+47,Stephanie Stewart,48,Tulsa,295.15
+48,Jason Sanchez,32,Arlington,155.85
+49,Rebecca Morris,23,New Orleans,390.00
+50,Jeffrey Rogers,50,Wichita,65.50
+51,Elizabeth Reed,29,Cleveland,235.30
+52,Gary Cook,41,Bakersfield,185.70
+53,Christine Bell,34,Aurora,315.20
+54,Frank Murphy,56,Honolulu,55.99
+55,Pamela Bailey,27,Anaheim,265.40
+56,Stephen Rivera,42,Santa Ana,178.60
+57,Cynthia Cooper,30,Corpus Christi,325.10
+58,Larry Richardson,49,Riverside,112.50
+59,Brenda Cox,35,Lexington,285.75
+60,Raymond Howard,26,St. Louis,145.20
+61,Shirley Ward,44,Stockton,335.00
+62,Roger Torres,39,Pittsburgh,88.40
+63,Catherine Peterson,31,Cincinnati,208.90
+64,Jeremy Gray,51,Greensboro,410.00
+65,Virginia Ramirez,28,Orlando,240.30
+66,Terry James,46,Durham,168.70
+67,Katherine Watson,33,St. Petersburg,345.50
+68,Harold Brooks,52,Lincoln,60.80
+69,Nicole Kelly,25,Hialeah,275.90
+70,Arthur Sanders,40,Newark,138.20
+71,Christine Price,37,Plano,308.15
+72,Dennis Bennett,24,Henderson,103.50
+73,Debra Wood,45,Fort Wayne,228.70
+74,Gerald Barnes,30,North Las Vegas,172.90
+75,Jacqueline Ross,53,Chandler,355.00
+76,Patrick Bryant,29,Scottsdale,92.60
+77,Shirley Hayes,42,Laredo,218.40
+78,Jerry Washington,34,Reno,365.10
+79,Maria Butler,27,Norfolk,118.99
+80,Henry Jenkins,47,Paradise,298.50
+81,Diane Simmons,31,Chula Vista,158.00
+82,Walter Foster,50,Richmond,400.00
+83,Frances Gonzales,28,Boise,268.20
+84,Philip Bryant,43,Irving,198.70
+85,Ann Long,35,Chesapeake,375.30
+86,Harry Alexander,26,Glendale,108.40
+87,Cheryl Russell,48,Fremont,288.90
+88,Peter Diaz,32,Baton Rouge,148.20
+89,Ashley Gordon,23,San Bernardino,395.00
+90,Juan Hernandez,51,Spokane,78.50
+91,Christina Young,29,Modesto,248.30
+92,Kyle Brooks,40,Tacoma,188.70
+93,Joyce King,33,Fontana,328.15
+94,Ethan Gray,54,Santa Clarita,68.99
+95,Kelly Rivera,28,Augusta,278.20
+96,Larry Coleman,43,Port St. Lucie,178.60
+97,Judy Perez,36,Chattanooga,338.10
+98,Adam Torres,25,Grand Rapids,118.50
+99,Shirley Watson,49,Mobile,288.75
+100,Kenneth Nelson,32,Huntsville,148.20
+101,Denise Phillips,23,Spring Valley,398.00
+102,Wayne Sanchez,50,Little Rock,72.10
+103,Ruth Miller,29,Dayton,228.40
+104,Aaron Cook,41,Akron,182.70
+105,Kathryn Allen,34,Overland Park,318.20
+106,Jessica Bell,56,Yonkers,62.99
+107,Sean Foster,27,Columbia,262.40
+108,Tina Hall,42,Springfield,172.60
+109,Billy Baker,30,Naperville,322.10
+110,Norma Murphy,49,Metairie,112.50
+111,Randy Reed,35,Syracuse,282.75
+112,Brenda Cox,26,New Haven,142.20
+113,Willie Hill,44,Bridgeport,332.00
+114,Virginia Kelly,39,Oceanside,82.40
+115,Louis Green,31,Gainesville,202.90
+116,Martha Adams,51,Providence,402.00
+117,Samuel Bennett,28,Worcester,232.30
+118,Anna Perez,46,Knoxville,162.70
+119,Bobby Clark,33,Salt Lake City,342.50
+120,Angela Wright,52,Pembroke Pines,62.80
+121,Roger King,25,Grand Prairie,272.90
+122,Madison Thomas,40,Frisco,132.20
+123,Frankie White,37,Cape Coral,302.15
+124,Beverly Davis,24,Rancho Cucamonga,102.50
+125,Earl Taylor,45,Denton,222.70
+126,Shirley Garcia,30,Waco,172.90
+127,Jeremy Miller,53,Charleston,352.00
+128,Christina Rodriguez,29,McKinney,92.60
+129,Louis Moore,42,Tempe,212.40
+130,Nicole Walker,34,Killeen,362.10
+131,Jesse Hall,27,Sunnyvale,112.99
+132,Justin Allen,47,Hollywood,292.50
+133,Samantha Lewis,31,Pasadena,152.00
+134,Howard Young,50,Miramar,382.00
+135,Carolyn Wright,28,Gresham,262.20
+136,Carlos Phillips,43,Clarksville,192.70
+137,Kimberly Harris,35,Palmdale,372.30
+138,Craig Campbell,26,Naperville,102.40
+139,Kathy Martinez,48,Springfield,282.90
+140,Jose Anderson,32,South Bend,142.20
+141,Brenda Thompson,23,Erie,392.00
+142,Scott Jackson,51,Centennial,72.50
+143,Joyce Roberts,29,Richardson,232.30
+144,Russell Turner,40,Pompano Beach,182.70
+145,Megan Kelly,33,Nampa,312.20
+146,Wayne Green,54,Daly City,52.99
+147,Marie King,28,Rochester,262.40
+148,Keith Cook,43,Everett,172.60
+149,Diane Adams,36,Green Bay,322.10
+150,Ryan Perez,25,Broken Arrow,112.50
+151,Judith Taylor,49,Cary,282.75
+152,Shawn Lewis,32,Lakeland,142.20
+153,Debra Hill,23,Syracuse,332.00
+154,Arthur White,50,Fayetteville,82.40
+155,Betty Moore,29,El Monte,202.90
+156,Juan Miller,41,Killeen,402.00
+157,Gloria Allen,34,Allentown,232.30
+158,Louis Clark,56,Wichita Falls,62.80
+159,Alice Campbell,27,Elizabeth,272.90
+160,Victor Davis,42,Odessa,132.20
+161,Rosemary Wright,30,Beaumont,302.15
+162,Steve Green,49,Midland,102.50
+163,Julie Phillips,35,Ann Arbor,222.70
+164,Jerry Adams,26,Greeley,172.90
+165,Norma White,44,High Point,352.00
+166,Adam Martinez,39,Waterbury,92.60
+167,Kathleen Moore,31,Portsmouth,212.40
+168,Randy Thomas,51,Peoria,362.10
+169,Martha Young,28,Richardson,112.99
+170,Jose Garcia,46,Vacaville,292.50
+171,Judy Taylor,33,Davenport,152.00
+172,Frank Alexander,52,Boulder,382.00
+173,Rebecca Walker,25,Santa Rosa,262.20
+174,Scott Clark,40,West Palm Beach,192.70
+175,Carolyn Rodriguez,37,Fort Collins,372.30
+176,Russell Roberts,24,Olathe,102.40
+177,Emily Wright,45,Edison,282.90
+178,Shirley King,30,Warren,142.20
+179,Willie Hill,53,Sioux Falls,392.00
+180,Mary Perez,29,Dayton,72.50
+181,Craig Anderson,42,Stamford,232.30
+182,Laura Hall,34,Dearborn,182.70
+183,Philip White,27,Elk Grove,312.20
+184,Joyce Brown,47,Grand Forks,52.99
+185,Shawn Miller,31,Temecula,262.40
+186,Cheryl Davis,50,Longmont,172.60
+187,James Taylor,28,Billings,322.10
+188,Kathleen Harris,43,Arvada,112.50
+189,Robert Lewis,36,Dover,282.75
+190,Michelle Thompson,25,Redding,142.20
+191,Edward Moore,48,Independence,332.00
+192,Sandra Kelly,32,Kalamazoo,82.40
+193,Gary Jackson,23,Rochester Hills,202.90
+194,Christine Sanchez,51,Federal Way,402.00
+195,George Robinson,29,League City,232.30
+196,Anna Walker,40,Des Moines,62.80
+197,Bobby Perez,33,Gaithersburg,272.90
+198,Megan Wright,54,South Jordan,132.20
+199,Wayne King,28,Deerfield Beach,302.15
+200,Louis Bell,43,West Jordan,102.50
+201,Martha Green,36,Kent,222.70
+202,Samuel Roberts,25,Sparks,172.90
+203,Anna Young,48,Brockton,352.00
+204,Bobby Anderson,32,Layton,92.60
+205,Angela Harris,23,Albany,212.40
+206,Roger Allen,51,Everett,362.10
+207,Madison Rodriguez,29,Canton,112.99
+208,Frankie Clark,40,San Angelo,292.50
+209,Beverly Parker,33,Edison,152.00
+210,Earl Hall,54,Waterbury,382.00
+211,Shirley Thomas,28,Pasadena,262.20
+212,Jeremy Lewis,43,Orem,192.70
+213,Christina Stewart,36,Compton,372.30
+214,Louis Brown,25,El Cajon,102.40
+215,Nicole Thompson,48,Norman,282.90
+216,Jesse Davis,32,South Gate,142.20
+217,Justin Kelly,23,Fall River,392.00
+218,Samantha Miller,51,Duluth,72.50
+219,Howard King,29,Camden,232.30
+220,Carolyn Bell,40,New Bedford,182.70
+221,Carlos Wright,33,Rochester,312.20
+222,Kimberly Hernandez,54,Dearborn,52.99
+223,Craig Perez,28,Suffolk,262.40
+224,Kathy Martinez,43,Longview,172.60
+225,Jose Young,36,Columbia,322.10
+226,Brenda Rodriguez,25,Vacaville,112.50
+227,Scott Walker,48,Hampton,282.75
+228,Joyce Smith,32,San Mateo,142.20
+229,Russell Alexander,23,Syracuse,332.00
+230,Emily Allen,51,Concord,82.40
+231,Shirley Brooks,29,Kent,202.90
+232,Willie Anderson,40,Springfield,402.00
+233,Mary Green,33,Pompano Beach,232.30
+234,Craig Hall,54,Federal Way,62.80
+235,Laura Harris,28,Santa Clara,272.90
+236,Philip Thompson,43,Fort Lauderdale,132.20
+237,Joyce Roberts,36,Paterson,302.15
+238,Shawn Davis,25,Hayward,102.50
+239,Cheryl Kelly,48,Lakewood,222.70
+240,James Lee,32,Tacoma,172.90
+241,Kathleen Young,23,Sunnyvale,352.00
+242,Robert Martin,51,Coral Springs,92.60
+243,Michelle Parker,29,Pomona,212.40
+244,Edward Wilson,40,Salinas,362.10
+245,Sandra King,33,Hollywood,112.99
+246,Gary Anderson,54,Miami Gardens,292.50
+247,Christine Thomas,28,Escondido,152.00
+248,George Allen,43,Kansas City,382.00
+249,Anna Garcia,36,Pasadena,262.20
+250,Bobby Moore,25,Fort Collins,192.70
+251,Megan Brown,48,Oceanside,372.30
+252,Wayne Jackson,32,Thousand Oaks,102.40
+253,Louis White,23,Vancouver,282.90
+254,Martha Perez,51,Orange,142.20
+255,Samuel Lewis,29,Fullerton,392.00
+256,Anna Robinson,40,Columbia,72.50
+257,Bobby Martinez,33,New Haven,232.30
+258,Angela King,54,Stamford,182.70
+259,Roger Hall,28,Waterbury,312.20
+260,Madison Campbell,43,Independence,52.99
+261,Frankie Thompson,36,Murfreesboro,262.40
+262,Beverly Allen,25,Springfield,172.60
+263,Earl Wilson,48,Vallejo,322.10
+264,Shirley Scott,32,Long Beach,112.50
+265,Jeremy Sanchez,23,Berkeley,282.75
+266,Christina Phillips,51,Santa Clarita,142.20
+267,Louis Davis,29,Peoria,332.00
+268,Nicole Bell,40,Tempe,82.40
+269,Jesse Green,33,Clearwater,202.90
+270,Justin Wright,54,El Monte,402.00
+271,Samantha Thomas,28,Daly City,232.30
+272,Howard Miller,43,Lakewood,62.80
+273,Carolyn King,36,Fairfield,272.90
+274,Carlos Alexander,25,Richmond,132.20
+275,Kimberly Lee,48,Norwalk,302.15
+276,Craig Campbell,32,Boca Raton,102.50
+277,Kathy Martinez,23,San Mateo,222.70
+278,Jose Young,51,West Covina,172.90
+279,Brenda Hall,29,Albany,352.00
+280,Scott Perez,40,Concord,92.60
+281,Joyce Roberts,33,Carlsbad,212.40
+282,Russell Turner,54,Meridian,362.10
+283,Emily Thompson,28,Killeen,112.99
+284,Shirley White,43,Waco,292.50
+285,Willie King,36,Charleston,152.00
+286,Mary Harris,25,McKinney,382.00
+287,Craig Allen,48,Tempe,262.20
+288,Laura Young,32,Sunnyvale,192.70
+289,Philip Scott,23,Hollywood,372.30
+290,Joyce Brown,51,Pasadena,102.40
+291,Shawn Lewis,29,Miramar,282.90
+292,Cheryl Clark,40,Gresham,142.20
+293,James Thompson,33,Clarksville,392.00
+294,Kathleen Wright,54,Palmdale,72.50
+295,Robert Martinez,28,Naperville,232.30
+296,Michelle Hall,43,Springfield,182.70
+297,Edward King,36,South Bend,312.20
+298,Sandra Bell,25,Erie,52.99
+299,Gary Thomas,48,Centennial,262.40
+300,Christine Green,32,Richardson,172.60
+301,George Anderson,23,Pompano Beach,322.10
+302,Anna Miller,51,Nampa,112.50
+303,Bobby Perez,29,Daly City,282.75
+304,Megan Davis,40,Rochester,142.20
+305,Wayne White,33,Everett,332.00
+306,Louis Lewis,54,Green Bay,82.40
+307,Martha Roberts,28,Broken Arrow,202.90
+308,Samuel Walker,43,Cary,402.00
+309,Anna King,36,Lakeland,232.30
+310,Bobby Stewart,25,Syracuse,62.80
+311,Angela Alexander,48,Fayetteville,272.90
+312,Roger Garcia,32,El Monte,132.20
+313,Madison Young,23,Killeen,302.15
+314,Frankie Scott,51,Waco,102.50
+315,Beverly Hernandez,29,Charleston,222.70
+316,Earl Martinez,40,McKinney,172.90
+317,Shirley Clark,33,Tempe,352.00
+318,Jeremy Thomas,54,Sunnyvale,92.60
+319,Christina King,28,Hollywood,212.40
+320,Louis Allen,43,Pasadena,362.10
+321,Nicole Walker,36,Miramar,112.99
+322,Jesse Brown,25,Gresham,292.50
+323,Justin Bell,48,Clarksville,152.00
+324,Samantha Lewis,32,Palmdale,382.00
+325,Howard King,23,Naperville,262.20
+326,Carolyn Kelly,51,Springfield,192.70
+327,Carlos Thompson,29,South Bend,372.30
+328,Kimberly White,40,Erie,102.40
+329,Craig Perez,33,Centennial,282.90
+330,Kathy Roberts,54,Richardson,142.20
+331,Jose Taylor,28,Pompano Beach,392.00
+332,Brenda Miller,43,Nampa,72.50
+333,Scott Green,36,Daly City,232.30
+334,Joyce Wright,25,Rochester,182.70
+335,Russell Garcia,48,Everett,312.20
+336,Emily King,32,Green Bay,52.99
+337,Shirley Young,23,Broken Arrow,262.40
+338,Willie Lee,51,Cary,172.60
+339,Mary Davis,29,Lakeland,322.10
+340,Craig Campbell,40,Syracuse,112.50
+341,Laura Thomas,33,Fayetteville,282.75
+342,Philip Anderson,54,El Monte,142.20
+343,Joyce Roberts,28,Killeen,332.00
+344,Shawn Thompson,43,Waco,82.40
+345,Cheryl Miller,36,Charleston,202.90
+346,James Kelly,25,McKinney,402.00
+347,Kathleen King,48,Tempe,232.30
+348,Robert Sanchez,32,Sunnyvale,62.80
+349,Michelle Wright,23,Hollywood,272.90
+350,Edward Bell,51,Pasadena,132.20
+351,Sandra Green,29,Miramar,302.15
+352,Gary Thomas,40,Gresham,102.50
+353,Christine Lewis,33,Clarksville,222.70
+354,George Anderson,54,Palmdale,172.90
+355,Anna King,28,Naperville,352.00
+356,Bobby Parker,43,Springfield,92.60
+357,Megan Miller,36,South Bend,212.40
+358,Wayne Taylor,25,Erie,362.10
+359,Louis Perez,48,Centennial,112.99
+360,Martha Bell,32,Richardson,292.50
+361,Samuel Young,23,Pompano Beach,152.00
+362,Anna Thompson,51,Nampa,382.00
+363,Bobby Green,29,Daly City,262.20
+364,Angela Roberts,40,Rochester,192.70
+365,Roger Clark,33,Everett,372.30
+366,Madison Miller,54,Green Bay,102.40
+367,Frankie King,28,Broken Arrow,282.90
+368,Beverly Davis,43,Cary,142.20
+369,Earl Wright,36,Lakeland,392.00
+370,Shirley Alexander,25,Syracuse,72.50
+371,Jeremy Sanchez,48,Fayetteville,232.30
+372,Christina Bell,32,El Monte,182.70
+373,Louis Perez,23,Killeen,312.20
+374,Nicole Brown,51,Waco,52.99
+375,Jesse Parker,29,Charleston,262.40
+376,Justin Taylor,40,McKinney,172.60
+377,Samantha Garcia,33,Tempe,322.10
+378,Howard Miller,54,Sunnyvale,112.50
+379,Carolyn King,28,Hollywood,282.75
+380,Carlos Lewis,43,Pasadena,142.20
+381,Kimberly Green,36,Miramar,332.00
+382,Craig Roberts,25,Gresham,82.40
+383,Kathy White,48,Clarksville,202.90
+384,Jose Allen,32,Palmdale,402.00
+385,Brenda King,23,Naperville,232.30
+386,Scott Thompson,51,Springfield,62.80
+387,Joyce Thomas,29,South Bend,272.90
+388,Russell Sanchez,40,Erie,132.20
+389,Emily Bell,33,Centennial,302.15
+390,Shirley Davis,54,Richardson,102.50
+391,Willie Miller,28,Pompano Beach,222.70
+392,Mary King,43,Nampa,172.90
+393,Craig Wright,36,Daly City,352.00
+394,Laura Allen,25,Rochester,92.60
+395,Philip Brown,48,Everett,212.40
+396,Joyce King,32,Green Bay,362.10
+397,Shawn Harris,23,Broken Arrow,112.99
+398,Cheryl Thomas,51,Cary,292.50
+399,James Walker,29,Lakeland,152.00
+400,Kathleen Roberts,40,Syracuse,382.00
+401,Robert Lee,33,Fayetteville,262.20
+402,Michelle King,54,El Monte,192.70
+403,Edward Wilson,28,Killeen,372.30
+404,Sandra Thomas,43,Waco,102.40
+405,Gary Allen,36,Charleston,282.90
+406,Christine Hall,25,McKinney,142.20
+407,George Bell,48,Tempe,392.00
+408,Anna Young,32,Sunnyvale,72.50
+409,Bobby Lewis,23,Hollywood,232.30
+410,Megan Garcia,51,Pasadena,182.70
+411,Wayne Taylor,29,Miramar,312.20
+412,Louis Sanchez,40,Gresham,52.99
+413,Martha Green,33,Clarksville,262.40
+414,Samuel Miller,54,Palmdale,172.60
+415,Anna Wright,28,Naperville,322.10
+416,Bobby Thompson,43,Springfield,112.50
+417,Angela King,36,South Bend,282.75
+418,Roger Thomas,25,Erie,142.20
+419,Madison Alexander,48,Centennial,332.00
+420,Frankie Roberts,32,Richardson,82.40
+421,Beverly Lee,23,Pompano Beach,202.90
+422,Earl Martinez,51,Nampa,402.00
+423,Shirley White,29,Daly City,232.30
+424,Jeremy Bell,40,Rochester,62.80
+425,Christina Phillips,33,Everett,272.90
+426,Louis Davis,54,Green Bay,132.20
+427,Nicole Perez,28,Broken Arrow,302.15
+428,Jesse Young,43,Cary,102.50
+429,Justin Thomas,36,Lakeland,222.70
+430,Samantha King,25,Syracuse,172.90
+431,Howard Harris,48,Fayetteville,352.00
+432,Carolyn Miller,32,El Monte,92.60
+433,Carlos Alexander,23,Killeen,212.40
+434,Kimberly Clark,51,Waco,362.10
+435,Craig Scott,29,Charleston,112.99
+436,Kathy Roberts,40,McKinney,292.50
+437,Jose Campbell,33,Tempe,152.00
+438,Brenda Taylor,54,Sunnyvale,382.00
+439,Scott Garcia,28,Hollywood,262.20
+440,Joyce King,43,Pasadena,192.70
+441,Russell Allen,36,Miramar,372.30
+442,Emily Young,25,Gresham,102.40
+443,Shirley Lewis,48,Clarksville,282.90
+444,Willie Brown,32,Palmdale,142.20
+445,Mary Thompson,23,Naperville,392.00
+446,Craig Perez,51,Springfield,72.50
+447,Laura Anderson,29,South Bend,232.30
+448,Philip Wright,40,Erie,182.70
+449,Joyce Sanchez,33,Centennial,312.20
+450,Shawn Bell,54,Richardson,52.99
+451,Cheryl Thomas,28,Pompano Beach,262.40
+452,James Green,43,Nampa,172.60
+453,Kathleen King,36,Daly City,322.10
+454,Robert Miller,25,Rochester,112.50
+455,Michelle Kelly,48,Everett,282.75
+456,Edward Young,32,Green Bay,142.20
+457,Sandra Campbell,23,Broken Arrow,332.00
+458,Gary Clark,51,Cary,82.40
+459,Christine Roberts,29,Lakeland,202.90
+460,George Anderson,40,Syracuse,402.00
+461,Anna Perez,33,Fayetteville,232.30
+462,Bobby Lee,54,El Monte,62.80
+463,Megan Thompson,28,Killeen,272.90
+464,Wayne Allen,43,Waco,132.20
+465,Louis King,36,Charleston,302.15
+466,Martha Bell,25,McKinney,102.50
+467,Samuel Young,48,Tempe,222.70
+468,Anna Roberts,32,Sunnyvale,172.90
+469,Bobby Brown,23,Hollywood,352.00
+470,Angela Sanchez,51,Pasadena,92.60
+471,Roger Lewis,29,Miramar,212.40
+472,Madison Walker,40,Gresham,362.10
+473,Frankie King,33,Clarksville,112.99
+474,Beverly Harris,54,Palmdale,292.50
+475,Earl Miller,28,Naperville,152.00
+476,Shirley Allen,43,Springfield,382.00
+477,Jeremy Wright,36,South Bend,262.20
+478,Christina King,25,Erie,192.70
+479,Louis Thomas,48,Centennial,372.30
+480,Nicole Campbell,32,Richardson,102.40
+481,Jesse Garcia,23,Pompano Beach,282.90
+482,Justin Thompson,51,Nampa,142.20
+483,Samantha Perez,29,Daly City,392.00
+484,Howard King,40,Rochester,72.50
+485,Carolyn Young,33,Everett,232.30
+486,Carlos Bell,54,Green Bay,182.70
+487,Kimberly Thomas,28,Broken Arrow,312.20
+488,Craig Lewis,43,Cary,52.99
+489,Kathy Miller,36,Lakeland,262.40
+490,Jose Sanchez,25,Syracuse,172.60
+491,Brenda King,48,Fayetteville,322.10
+492,Scott Thompson,32,El Monte,112.50
+493,Joyce Roberts,23,Killeen,282.75
+494,Russell Allen,51,Waco,142.20
+495,Emily King,29,Charleston,332.00
+496,Shirley Davis,40,McKinney,82.40
+497,Willie Miller,33,Tempe,202.90
+498,Mary Thomas,54,Sunnyvale,402.00
+499,Craig Wright,28,Hollywood,232.30
+500,Laura Bell,43,Pasadena,62.80
+501,Philip Sanchez,36,Miramar,272.90
+502,Joyce King,25,Gresham,132.20
+503,Shawn Harris,48,Clarksville,302.15
+504,Cheryl Lewis,32,Palmdale,102.50
+505,James Walker,23,Naperville,222.70
+506,Kathleen Roberts,51,Springfield,172.90
+507,Robert Lee,29,South Bend,352.00
+508,Michelle King,40,Erie,92.60
+509,Edward Wilson,33,Centennial,212.40
+510,Sandra Thomas,54,Richardson,362.10
+511,Gary Allen,28,Pompano Beach,112.99
+512,Christine Hall,43,Nampa,292.50
+513,George Bell,36,Daly City,152.00
+514,Anna Young,25,Rochester,382.00
+515,Bobby Lewis,48,Everett,262.20
+516,Megan Garcia,32,Green Bay,192.70
+517,Wayne Taylor,23,Broken Arrow,372.30
+518,Louis Sanchez,51,Cary,102.40
+519,Martha Green,29,Lakeland,282.90
+520,Samuel Miller,40,Syracuse,142.20
+521,Anna Wright,33,Fayetteville,392.00
+522,Bobby Thompson,54,El Monte,72.50
+523,Angela King,28,Killeen,232.30
+524,Roger Thomas,43,Waco,182.70
+525,Madison Alexander,36,Charleston,312.20
+526,Frankie Roberts,25,McKinney,52.99
+527,Beverly Lee,48,Tempe,262.40
+528,Earl Martinez,32,Sunnyvale,172.60
+529,Shirley White,23,Hollywood,322.10
+530,Jeremy Bell,51,Pasadena,112.50
+531,Christina Phillips,29,Miramar,282.75
+532,Louis Davis,40,Gresham,142.20
+533,Nicole Perez,33,Clarksville,332.00
+534,Jesse Young,54,Palmdale,82.40
+535,Justin Thomas,28,Naperville,202.90
+536,Samantha King,43,Springfield,402.00
+537,Howard Harris,36,South Bend,232.30
+538,Carolyn Miller,25,Erie,62.80
+539,Carlos Alexander,48,Centennial,272.90
+540,Kimberly Clark,32,Richardson,132.20
+541,Craig Scott,23,Pompano Beach,302.15
+542,Kathy Roberts,51,Nampa,102.50
+543,Jose Campbell,29,Daly City,222.70
+544,Brenda Taylor,40,Rochester,172.90
+545,Scott Garcia,33,Everett,352.00
+546,Joyce King,54,Green Bay,92.60
+547,Russell Allen,28,Broken Arrow,212.40
+548,Emily Young,43,Cary,362.10
+549,Shirley Lewis,36,Lakeland,112.99
+550,Willie Brown,25,Syracuse,292.50
+551,Mary Thompson,48,Fayetteville,152.00
+552,Craig Perez,32,El Monte,382.00
+553,Laura Anderson,23,Killeen,262.20
+554,Philip Wright,51,Waco,192.70
+555,Joyce Sanchez,29,Charleston,372.30
+556,Shawn Bell,40,McKinney,102.40
+557,Cheryl Thomas,33,Tempe,282.90
+558,James Green,54,Sunnyvale,142.20
+559,Kathleen King,28,Hollywood,392.00
+560,Robert Miller,43,Pasadena,72.50
+561,Michelle Kelly,36,Miramar,232.30
+562,Edward Young,25,Gresham,182.70
+563,Sandra Campbell,48,Clarksville,312.20
+564,Gary Clark,32,Palmdale,52.99
+565,Christine Roberts,23,Naperville,262.40
+566,George Anderson,51,Springfield,172.60
+567,Anna Perez,29,South Bend,322.10
+568,Bobby Lee,40,Erie,112.50
+569,Megan Thompson,33,Centennial,282.75
+570,Wayne Allen,54,Richardson,142.20
+571,Louis King,28,Pompano Beach,332.00
+572,Martha Bell,43,Nampa,82.40
+573,Samuel Young,36,Daly City,202.90
+574,Anna Roberts,25,Rochester,402.00
+575,Bobby Brown,48,Everett,232.30
+576,Angela Sanchez,32,Green Bay,62.80
+577,Roger Lewis,23,Broken Arrow,272.90
+578,Madison Walker,51,Cary,132.20
+579,Frankie King,29,Lakeland,302.15
+580,Beverly Harris,40,Syracuse,102.50
+581,Earl Miller,33,Fayetteville,222.70
+582,Shirley Allen,54,El Monte,172.90
+583,Jeremy Wright,28,Killeen,352.00
+584,Christina King,43,Waco,92.60
+585,Louis Thomas,36,Charleston,212.40
+586,Nicole Campbell,25,McKinney,362.10
+587,Jesse Garcia,48,Tempe,112.99
+588,Justin Thompson,32,Sunnyvale,292.50
+589,Samantha Perez,23,Hollywood,152.00
+590,Howard King,51,Pasadena,382.00
+591,Carolyn Young,29,Miramar,262.20
+592,Carlos Bell,40,Gresham,192.70
+593,Kimberly Thomas,33,Clarksville,372.30
+594,Craig Lewis,54,Palmdale,102.40
+595,Kathy Miller,28,Naperville,282.90
+596,Jose Sanchez,43,Springfield,142.20
+597,Brenda King,36,South Bend,392.00
+598,Scott Thompson,25,Erie,72.50
+599,Joyce Roberts,48,Centennial,232.30
+600,Russell Allen,32,Richardson,182.70
+601,Emily King,23,Pompano Beach,312.20
+602,Shirley Davis,51,Nampa,52.99
+603,Willie Miller,29,Daly City,262.40
+604,Mary Thomas,40,Rochester,172.60
+605,Craig Wright,33,Everett,322.10
+606,Laura Bell,54,Green Bay,112.50
+607,Philip Sanchez,28,Broken Arrow,282.75
+608,Joyce King,43,Cary,142.20
+609,Shawn Harris,36,Lakeland,332.00
+610,Cheryl Lewis,25,Syracuse,82.40
+611,James Walker,48,Fayetteville,202.90
+612,Kathleen Roberts,32,El Monte,402.00
+613,Robert Lee,23,Killeen,232.30
+614,Michelle King,51,Waco,62.80
+615,Edward Wilson,29,Charleston,272.90
+616,Sandra Thomas,40,McKinney,132.20
+617,Gary Allen,33,Tempe,302.15
+618,Christine Hall,54,Sunnyvale,102.50
+619,George Bell,28,Hollywood,222.70
+620,Anna Young,43,Pasadena,172.90
+621,Bobby Lewis,36,Miramar,352.00
+622,Megan Garcia,25,Gresham,92.60
+623,Wayne Taylor,48,Clarksville,212.40
+624,Louis Sanchez,32,Palmdale,362.10
+625,Martha Green,23,Naperville,112.99
+626,Samuel Miller,51,Springfield,292.50
+627,Anna Wright,29,South Bend,152.00
+628,Bobby Thompson,40,Erie,382.00
+629,Angela King,33,Centennial,262.20
+630,Roger Thomas,54,Richardson,192.70
+631,Madison Alexander,28,Pompano Beach,372.30
+632,Frankie Roberts,43,Nampa,102.40
+633,Beverly Lee,36,Daly City,282.90
+634,Earl Martinez,25,Rochester,142.20
+635,Shirley White,48,Everett,392.00
+636,Jeremy Bell,32,Green Bay,72.50
+637,Christina Phillips,23,Broken Arrow,232.30
+638,Louis Davis,51,Cary,182.70
+639,Nicole Perez,29,Lakeland,312.20
+640,Jesse Young,40,Syracuse,52.99
+641,Justin Thomas,33,Fayetteville,262.40
+642,Samantha King,54,El Monte,172.60
+643,Howard Harris,28,Killeen,322.10
+644,Carolyn Miller,43,Waco,112.50
+645,Carlos Alexander,36,Charleston,282.75
+646,Kimberly Clark,25,McKinney,142.20
+647,Craig Scott,48,Tempe,332.00
+648,Kathy Roberts,32,Sunnyvale,82.40
+649,Jose Campbell,23,Hollywood,202.90
+650,Brenda Taylor,51,Pasadena,402.00
+651,Scott Garcia,29,Miramar,232.30
+652,Joyce King,40,Gresham,62.80
+653,Russell Allen,33,Clarksville,272.90
+654,Emily Young,54,Palmdale,132.20
+655,Shirley Lewis,28,Naperville,302.15
+656,Willie Brown,43,Springfield,102.50
+657,Mary Thompson,36,South Bend,222.70
+658,Craig Perez,25,Erie,172.90
+659,Laura Anderson,48,Centennial,352.00
+660,Philip Wright,32,Richardson,92.60
+661,Joyce Sanchez,23,Pompano Beach,212.40
+662,Shawn Bell,51,Nampa,362.10
+663,Cheryl Thomas,29,Daly City,112.99
+664,James Green,40,Rochester,292.50
+665,Kathleen King,33,Everett,152.00
+666,Robert Miller,54,Green Bay,382.00
+667,Michelle Kelly,28,Broken Arrow,262.20
+668,Edward Young,43,Cary,192.70
+669,Sandra Campbell,36,Lakeland,372.30
+670,Gary Clark,25,Syracuse,102.40
+671,Christine Roberts,48,Fayetteville,282.90
+672,George Anderson,32,El Monte,142.20
+673,Anna Perez,23,Killeen,392.00
+674,Bobby Lee,51,Waco,72.50
+675,Megan Thompson,29,Charleston,232.30
+676,Wayne Allen,40,McKinney,182.70
+677,Louis King,33,Tempe,312.20
+678,Martha Bell,54,Sunnyvale,52.99
+679,Samuel Young,28,Hollywood,262.40
+680,Anna Roberts,43,Pasadena,172.60
+681,Bobby Brown,36,Miramar,322.10
+682,Angela Sanchez,25,Gresham,112.50
+683,Roger Lewis,48,Clarksville,282.75
+684,Madison Walker,32,Palmdale,142.20
+685,Frankie King,23,Naperville,332.00
+686,Beverly Harris,51,Springfield,82.40
+687,Earl Miller,29,South Bend,202.90
+688,Shirley Allen,40,Erie,402.00
+689,Jeremy Wright,33,Centennial,232.30
+690,Christina King,54,Richardson,62.80
+691,Louis Thomas,28,Pompano Beach,272.90
+692,Nicole Campbell,43,Nampa,132.20
+693,Jesse Garcia,36,Daly City,302.15
+694,Justin Thompson,25,Rochester,102.50
+695,Samantha Perez,48,Everett,222.70
+696,Howard King,32,Green Bay,172.90
+697,Carolyn Young,23,Broken Arrow,352.00
+698,Carlos Bell,51,Cary,92.60
+699,Kimberly Thomas,29,Lakeland,212.40
+700,Craig Lewis,40,Syracuse,362.10
+701,Kathy Miller,33,Fayetteville,112.99
+702,Jose Sanchez,54,El Monte,292.50
+703,Brenda King,28,Killeen,152.00
+704,Scott Thompson,43,Waco,382.00
+705,Joyce Roberts,36,Charleston,262.20
+706,Russell Allen,25,McKinney,192.70
+707,Emily King,48,Tempe,372.30
+708,Shirley Davis,32,Sunnyvale,102.40
+709,Willie Miller,23,Hollywood,282.90
+710,Mary Thomas,51,Pasadena,142.20
+711,Craig Wright,29,Miramar,392.00
+712,Laura Bell,40,Gresham,72.50
+713,Philip Sanchez,33,Clarksville,232.30
+714,Joyce King,54,Palmdale,182.70
+715,Shawn Harris,28,Naperville,312.20
+716,Cheryl Lewis,43,Springfield,52.99
+717,James Walker,36,South Bend,262.40
+718,Kathleen Roberts,25,Erie,172.60
+719,Robert Lee,48,Centennial,322.10
+720,Michelle King,32,Richardson,112.50
+721,Edward Wilson,23,Pompano Beach,282.75
+722,Sandra Thomas,51,Nampa,142.20
+723,Gary Allen,29,Daly City,332.00
+724,Christine Hall,40,Rochester,82.40
+725,George Bell,33,Everett,202.90
+726,Anna Young,54,Green Bay,402.00
+727,Bobby Lewis,28,Broken Arrow,232.30
+728,Megan Garcia,43,Cary,62.80
+729,Wayne Taylor,36,Lakeland,272.90
+730,Louis Sanchez,25,Syracuse,132.20
+731,Martha Green,48,Fayetteville,302.15
+732,Samuel Miller,32,El Monte,102.50
+733,Anna Wright,23,Killeen,222.70
+734,Bobby Thompson,51,Waco,172.90
+735,Angela King,29,Charleston,352.00
+736,Roger Thomas,40,McKinney,92.60
+737,Madison Alexander,33,Tempe,212.40
+738,Frankie Roberts,54,Sunnyvale,362.10
+739,Beverly Lee,28,Hollywood,112.99
+740,Earl Martinez,43,Pasadena,292.50
+741,Shirley White,36,Miramar,152.00
+742,Jeremy Bell,25,Gresham,382.00
+743,Christina Phillips,48,Clarksville,262.20
+744,Louis Davis,32,Palmdale,192.70
+745,Nicole Perez,23,Naperville,372.30
+746,Jesse Young,51,Springfield,102.40
+747,Justin Thomas,29,South Bend,282.90
+748,Samantha King,40,Erie,142.20
+749,Howard Harris,33,Centennial,392.00
+750,Carolyn Miller,54,Richardson,72.50
+751,Carlos Alexander,28,Pompano Beach,232.30
+752,Kimberly Clark,43,Nampa,182.70
+753,Craig Scott,36,Daly City,312.20
+754,Kathy Roberts,25,Rochester,52.99
+755,Jose Campbell,48,Everett,262.40
+756,Brenda Taylor,32,Green Bay,172.60
+757,Scott Garcia,23,Broken Arrow,322.10
+758,Joyce King,51,Cary,112.50
+759,Russell Allen,29,Lakeland,282.75
+760,Emily Young,40,Syracuse,142.20
+761,Shirley Lewis,33,Fayetteville,332.00
+762,Willie Brown,54,El Monte,82.40
+763,Mary Thompson,28,Killeen,202.90
+764,Craig Perez,43,Waco,402.00
+765,Laura Anderson,36,Charleston,232.30
+766,Philip Wright,25,McKinney,62.80
+767,Joyce Sanchez,48,Tempe,272.90
+768,Shawn Bell,32,Sunnyvale,132.20
+769,Cheryl Thomas,23,Hollywood,302.15
+770,James Green,51,Pasadena,102.50
+771,Kathleen King,29,Miramar,222.70
+772,Robert Miller,40,Gresham,172.90
+773,Michelle Kelly,33,Clarksville,352.00
+774,Edward Young,54,Palmdale,92.60
+775,Sandra Campbell,28,Naperville,212.40
+776,Gary Clark,43,Springfield,362.10
+777,Christine Roberts,36,South Bend,112.99
+778,George Anderson,25,Erie,292.50
+779,Anna Perez,48,Centennial,152.00
+780,Bobby Lee,32,Richardson,382.00
+781,Megan Thompson,23,Pompano Beach,262.20
+782,Wayne Allen,51,Nampa,192.70
+783,Louis King,29,Daly City,372.30
+784,Martha Bell,40,Rochester,102.40
+785,Samuel Young,33,Everett,282.90
+786,Anna Roberts,54,Green Bay,142.20
+787,Bobby Brown,28,Broken Arrow,392.00
+788,Angela Sanchez,43,Cary,72.50
+789,Roger Lewis,36,Lakeland,232.30
+790,Madison Walker,25,Syracuse,182.70
+791,Frankie King,48,Fayetteville,312.20
+792,Beverly Harris,32,El Monte,52.99
+793,Earl Miller,23,Killeen,262.40
+794,Shirley Allen,51,Waco,172.60
+795,Jeremy Wright,29,Charleston,322.10
+796,Christina King,40,McKinney,112.50
+797,Louis Thomas,33,Tempe,282.75
+798,Nicole Campbell,54,Sunnyvale,142.20
+799,Jesse Garcia,28,Hollywood,332.00
+800,Justin Thompson,43,Pasadena,82.40
+801,Samantha Perez,36,Miramar,202.90
+802,Howard King,25,Gresham,402.00
+803,Carolyn Young,48,Clarksville,232.30
+804,Carlos Bell,32,Palmdale,62.80
+805,Kimberly Thomas,23,Naperville,272.90
+806,Craig Lewis,51,Springfield,132.20
+807,Kathy Miller,29,South Bend,302.15
+808,Jose Sanchez,40,Erie,102.50
+809,Brenda King,33,Centennial,222.70
+810,Scott Thompson,54,Richardson,172.90
+811,Joyce Roberts,28,Pompano Beach,352.00
+812,Russell Allen,43,Nampa,92.60
+813,Emily King,36,Daly City,212.40
+814,Shirley Davis,25,Rochester,362.10
+815,Willie Miller,48,Everett,112.99
+816,Mary Thomas,32,Green Bay,292.50
+817,Craig Wright,23,Broken Arrow,152.00
+818,Laura Bell,51,Cary,382.00
+819,Philip Sanchez,29,Lakeland,262.20
+820,Joyce King,40,Syracuse,192.70
+821,Shawn Harris,33,Fayetteville,372.30
+822,Cheryl Lewis,54,El Monte,102.40
+823,James Walker,28,Killeen,282.90
+824,Kathleen Roberts,43,Waco,142.20
+825,Robert Lee,36,Charleston,392.00
+826,Michelle King,25,McKinney,72.50
+827,Edward Wilson,48,Tempe,232.30
+828,Sandra Thomas,32,Sunnyvale,182.70
+829,Gary Allen,23,Hollywood,312.20
+830,Christine Hall,51,Pasadena,52.99
+831,George Bell,29,Miramar,262.40
+832,Anna Young,40,Gresham,172.60
+833,Bobby Lewis,33,Clarksville,322.10
+834,Megan Garcia,54,Palmdale,112.50
+835,Wayne Taylor,28,Naperville,282.75
+836,Louis Sanchez,43,Springfield,142.20
+837,Martha Green,36,South Bend,332.00
+838,Samuel Miller,25,Erie,82.40
+839,Anna Wright,48,Centennial,202.90
+840,Bobby Thompson,32,Richardson,402.00
+841,Angela King,23,Pompano Beach,232.30
+842,Roger Thomas,51,Nampa,62.80
+843,Madison Alexander,29,Daly City,272.90
+844,Frankie Roberts,40,Rochester,132.20
+845,Beverly Lee,33,Everett,302.15
+846,Earl Martinez,54,Green Bay,102.50
+847,Shirley White,28,Broken Arrow,222.70
+848,Jeremy Bell,43,Cary,172.90
+849,Christina Phillips,36,Lakeland,352.00
+850,Louis Davis,25,Syracuse,92.60
+851,Nicole Perez,48,Fayetteville,212.40
+852,Jesse Young,32,El Monte,362.10
+853,Justin Thomas,23,Killeen,112.99
+854,Samantha King,51,Waco,292.50
+855,Howard Harris,29,Charleston,152.00
+856,Carolyn Miller,40,McKinney,382.00
+857,Carlos Alexander,33,Tempe,262.20
+858,Kimberly Clark,54,Sunnyvale,192.70
+859,Craig Scott,28,Hollywood,372.30
+860,Kathy Roberts,43,Pasadena,102.40
+861,Jose Campbell,36,Miramar,282.90
+862,Brenda Taylor,25,Gresham,142.20
+863,Scott Garcia,48,Clarksville,392.00
+864,Joyce King,32,Palmdale,72.50
+865,Russell Allen,23,Naperville,232.30
+866,Emily Young,51,Springfield,182.70
+867,Shirley Lewis,29,South Bend,312.20
+868,Willie Brown,40,Erie,52.99
+869,Mary Thompson,33,Centennial,262.40
+870,Craig Perez,54,Richardson,172.60
+871,Laura Anderson,28,Pompano Beach,322.10
+872,Philip Wright,43,Nampa,112.50
+873,Joyce Sanchez,36,Daly City,282.75
+874,Shawn Bell,25,Rochester,142.20
+875,Cheryl Thomas,48,Everett,332.00
+876,James Green,32,Green Bay,82.40
+877,Kathleen King,23,Broken Arrow,202.90
+878,Robert Miller,51,Cary,402.00
+879,Michelle Kelly,29,Lakeland,232.30
+880,Edward Young,40,Syracuse,62.80
+881,Sandra Campbell,33,Fayetteville,272.90
+882,Gary Clark,54,El Monte,132.20
+883,Christine Roberts,28,Killeen,302.15
+884,George Anderson,43,Waco,102.50
+885,Anna Perez,36,Charleston,222.70
+886,Bobby Lee,25,McKinney,172.90
+887,Megan Thompson,48,Tempe,352.00
+888,Wayne Allen,32,Sunnyvale,92.60
+889,Louis King,23,Hollywood,212.40
+890,Martha Bell,51,Pasadena,362.10
+891,Samuel Young,29,Miramar,112.99
+892,Anna Roberts,40,Gresham,292.50
+893,Bobby Brown,33,Clarksville,152.00
+894,Angela Sanchez,54,Palmdale,382.00
+895,Roger Lewis,28,Naperville,262.20
+896,Madison Walker,43,Springfield,192.70
+897,Frankie King,36,South Bend,372.30
+898,Beverly Harris,25,Erie,102.40
+899,Earl Miller,48,Centennial,282.90
+900,Shirley Allen,32,Richardson,142.20
+901,Jeremy Wright,23,Pompano Beach,392.00
+902,Christina King,51,Nampa,72.50
+903,Louis Thomas,29,Daly City,232.30
+904,Nicole Campbell,40,Rochester,182.70
+905,Jesse Garcia,33,Everett,312.20
+906,Justin Thompson,54,Green Bay,52.99
+907,Samantha Perez,28,Broken Arrow,262.40
+908,Howard King,43,Cary,172.60
+909,Carolyn Young,36,Lakeland,322.10
+910,Carlos Bell,25,Syracuse,112.50
+911,Kimberly Thomas,48,Fayetteville,282.75
+912,Craig Lewis,32,El Monte,142.20
+913,Kathy Miller,23,Killeen,332.00
+914,Jose Sanchez,51,Waco,82.40
+915,Brenda King,29,Charleston,202.90
+916,Scott Thompson,40,McKinney,402.00
+917,Joyce Roberts,33,Tempe,232.30
+918,Russell Allen,54,Sunnyvale,62.80
+919,Emily King,28,Hollywood,272.90
+920,Shirley Davis,43,Pasadena,132.20
+921,Willie Miller,36,Miramar,302.15
+922,Mary Thomas,25,Gresham,102.50
+923,Craig Wright,48,Clarksville,222.70
+924,Laura Bell,32,Palmdale,172.90
+925,Philip Sanchez,23,Naperville,352.00
+926,Joyce King,51,Springfield,92.60
+927,Shawn Harris,29,South Bend,212.40
+928,Cheryl Lewis,40,Erie,362.10
+929,James Walker,33,Centennial,112.99
+930,Kathleen Roberts,54,Richardson,292.50
+931,Robert Lee,28,Pompano Beach,152.00
+932,Michelle King,43,Nampa,382.00
+933,Edward Wilson,36,Daly City,262.20
+934,Sandra Thomas,25,Rochester,192.70
+935,Gary Allen,48,Everett,372.30
+936,Christine Hall,32,Green Bay,102.40
+937,George Bell,23,Broken Arrow,282.90
+938,Anna Young,51,Cary,142.20
+939,Bobby Lewis,29,Lakeland,392.00
+940,Megan Garcia,40,Syracuse,72.50
+941,Wayne Taylor,33,Fayetteville,232.30
+942,Louis Sanchez,54,El Monte,182.70
+943,Martha Green,28,Killeen,312.20
+944,Samuel Miller,43,Waco,52.99
+945,Anna Wright,36,Charleston,262.40
+946,Bobby Thompson,25,McKinney,172.60
+947,Angela King,48,Tempe,322.10
+948,Roger Thomas,32,Sunnyvale,112.50
+949,Madison Alexander,23,Hollywood,282.75
+950,Frankie Roberts,51,Pasadena,142.20
+951,Beverly Lee,29,Miramar,332.00
+952,Earl Martinez,40,Gresham,82.40
+953,Shirley White,33,Clarksville,202.90
+954,Jeremy Bell,54,Palmdale,402.00
+955,Christina Phillips,28,Naperville,232.30
+956,Louis Davis,43,Springfield,62.80
+957,Nicole Perez,36,South Bend,272.90
+958,Jesse Young,25,Erie,132.20
+959,Justin Thomas,48,Centennial,302.15
+960,Samantha King,32,Richardson,102.50
+961,Howard Harris,23,Pompano Beach,222.70
+962,Carolyn Miller,51,Nampa,172.90
+963,Carlos Alexander,29,Daly City,352.00
+964,Kimberly Clark,40,Rochester,92.60
+965,Craig Scott,33,Everett,212.40
+966,Kathy Roberts,54,Green Bay,362.10
+967,Jose Campbell,28,Broken Arrow,112.99
+968,Brenda Taylor,43,Cary,292.50
+969,Scott Garcia,36,Lakeland,152.00
+970,Joyce King,25,Syracuse,382.00
+971,Russell Allen,48,Fayetteville,262.20
+972,Emily Young,32,El Monte,192.70
+973,Shirley Lewis,23,Killeen,372.30
+974,Willie Brown,51,Waco,102.40
+975,Mary Thompson,29,Charleston,282.90
+976,Craig Perez,40,McKinney,142.20
+977,Laura Anderson,33,Tempe,392.00
+978,Philip Wright,54,Sunnyvale,72.50
+979,Joyce Sanchez,28,Hollywood,232.30
+980,Shawn Bell,43,Pasadena,182.70
+981,Cheryl Thomas,36,Miramar,312.20
+982,James Green,25,Gresham,52.99
+983,Kathleen King,48,Clarksville,262.40
+984,Robert Miller,32,Palmdale,172.60
+985,Michelle Kelly,23,Naperville,322.10
+986,Edward Young,51,Springfield,112.50
+987,Sandra Campbell,29,South Bend,282.75
+988,Gary Clark,40,Erie,142.20
+989,Christine Roberts,33,Centennial,332.00
+990,George Anderson,54,Richardson,82.40
+991,Anna Perez,28,Pompano Beach,202.90
+992,Bobby Lee,43,Nampa,402.00
+993,Megan Thompson,36,Daly City,232.30
+994,Wayne Allen,25,Rochester,62.80
+995,Louis King,48,Everett,272.90
+996,Martha Bell,32,Green Bay,132.20
+997,Samuel Young,23,Broken Arrow,302.15
+998,Anna Roberts,51,Cary,102.50
+999,Bobby Brown,29,Lakeland,222.70
+1000,Angela Sanchez,40,Syracuse,172.90
