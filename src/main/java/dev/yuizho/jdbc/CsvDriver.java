@@ -1,7 +1,5 @@
 package dev.yuizho.jdbc;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.sql.*;
 import java.util.Properties;
 import java.util.logging.Logger;
