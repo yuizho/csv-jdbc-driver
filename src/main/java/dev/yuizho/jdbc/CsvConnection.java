@@ -1,11 +1,7 @@
 package dev.yuizho.jdbc;
 
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
-
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
 import java.sql.*;
 import java.util.Map;
 import java.util.Properties;
@@ -30,6 +26,13 @@ public class CsvConnection implements Connection {
         } catch (IOException e) {
             throw new SQLException(e);
         }
+    }
+
+    @Override
+    public boolean isValid(int timeout) throws SQLException {
+        // TODO: コネクションプール向けにインチキして常にtrue返してる。ちゃんとやるならファイルが読める状態化とかを調べる。
+
+        return true;
     }
 
     @Override
@@ -219,11 +222,6 @@ public class CsvConnection implements Connection {
 
     @Override
     public SQLXML createSQLXML() throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public boolean isValid(int timeout) throws SQLException {
         throw new UnsupportedOperationException();
     }
 
