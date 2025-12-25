@@ -31,8 +31,8 @@ public class CsvStatement implements Statement {
     @Override
     public ResultSet executeQuery(String sql) throws SQLException {
         // TODO: SQLの内容をパースしてうまいことやる
-
-        return new CsvResultSet(this.csvParser.getRecords());
+        int columnCount = this.csvParser.getHeaderNames().size();
+        return new CsvResultSet(this.csvParser.getRecords(), columnCount);
     }
 
     @Override

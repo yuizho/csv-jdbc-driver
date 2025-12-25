@@ -18,7 +18,7 @@ public class CsvDriver implements Driver {
 
     @Override
     public boolean acceptsURL(String url) throws SQLException {
-        throw new UnsupportedOperationException();
+        return url.startsWith(EXPECTED_URL_PREFIX);
     }
 
     @Override

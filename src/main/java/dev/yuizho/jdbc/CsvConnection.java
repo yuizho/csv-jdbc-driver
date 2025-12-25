@@ -36,6 +36,28 @@ public class CsvConnection implements Connection {
     }
 
     @Override
+    public boolean isReadOnly() throws SQLException {
+        // コネクションプール向けにインチキして常にtrue返してる。
+
+        return true;
+    }
+
+    @Override
+    public void setReadOnly(boolean readOnly) throws SQLException {
+        // コネクションプール向けにインチキしてなにもしない
+    }
+
+    @Override
+    public boolean getAutoCommit() throws SQLException {
+        return true;
+    }
+
+    @Override
+    public int getTransactionIsolation() throws SQLException {
+        return Connection.TRANSACTION_NONE;
+    }
+
+    @Override
     public boolean isClosed() throws SQLException {
         throw new UnsupportedOperationException();
     }
@@ -61,11 +83,6 @@ public class CsvConnection implements Connection {
     }
 
     @Override
-    public boolean getAutoCommit() throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void commit() throws SQLException {
         throw new UnsupportedOperationException();
     }
@@ -81,16 +98,6 @@ public class CsvConnection implements Connection {
     }
 
     @Override
-    public void setReadOnly(boolean readOnly) throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public boolean isReadOnly() throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void setCatalog(String catalog) throws SQLException {
         throw new UnsupportedOperationException();
     }
@@ -102,11 +109,6 @@ public class CsvConnection implements Connection {
 
     @Override
     public void setTransactionIsolation(int level) throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public int getTransactionIsolation() throws SQLException {
         throw new UnsupportedOperationException();
     }
 

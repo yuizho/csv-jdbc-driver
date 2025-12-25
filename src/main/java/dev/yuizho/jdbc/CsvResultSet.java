@@ -14,10 +14,12 @@ import java.util.Map;
 
 public class CsvResultSet implements ResultSet {
     private final Iterator<CSVRecord> records;
+    private final int columnCount;
     private CSVRecord current;
 
-    public CsvResultSet(List<CSVRecord> records) {
+    public CsvResultSet(List<CSVRecord> records, int columnCount) {
         this.records = records.iterator();
+        this.columnCount = columnCount;
     }
 
     @Override
@@ -36,6 +38,16 @@ public class CsvResultSet implements ResultSet {
         // TODO: validation
 
         return current.get(columnIndex - 1);
+    }
+
+    @Override
+    public Object getObject(int columnIndex) throws SQLException {
+        return getString(columnIndex);
+    }
+
+    @Override
+    public ResultSetMetaData getMetaData() throws SQLException {
+        return new CsvResultSetMetaData(this.columnCount);
     }
 
     @Override
@@ -215,16 +227,6 @@ public class CsvResultSet implements ResultSet {
 
     @Override
     public String getCursorName() throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public ResultSetMetaData getMetaData() throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public Object getObject(int columnIndex) throws SQLException {
         throw new UnsupportedOperationException();
     }
 
