@@ -1,14 +1,18 @@
 package dev.yuizho.jdbc;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.sql.*;
 import java.util.Properties;
-import java.util.logging.Logger;
 
 public class CsvDriver implements Driver {
     private static final String EXPECTED_URL_PREFIX = "jdbc:classpath://";
+    private static final Logger LOGGER = LoggerFactory.getLogger(CsvDriver.class);
 
     @Override
     public Connection connect(String url, Properties info) throws SQLException {
+        LOGGER.info("CsvDriver#connect");
         if (!url.startsWith(EXPECTED_URL_PREFIX)) {
             throw new IllegalArgumentException("urlはjdbc:classpath://形式で入力してください。");
         }
@@ -42,7 +46,7 @@ public class CsvDriver implements Driver {
     }
 
     @Override
-    public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+    public java.util.logging.Logger getParentLogger() throws SQLFeatureNotSupportedException {
         throw new UnsupportedOperationException();
     }
 }

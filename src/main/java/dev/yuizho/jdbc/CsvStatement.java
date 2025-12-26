@@ -7,6 +7,8 @@ import net.sf.jsqlparser.schema.Column;
 import net.sf.jsqlparser.statement.select.PlainSelect;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,6 +17,7 @@ import java.sql.*;
 import java.util.Optional;
 
 public class CsvStatement implements Statement {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CsvStatement.class);
     private final CSVParser csvParser;
 
     public CsvStatement(InputStream is) {
@@ -36,6 +39,7 @@ public class CsvStatement implements Statement {
 
     @Override
     public ResultSet executeQuery(String sql) throws SQLException {
+        LOGGER.info("CsvStatement#executeQuery");
         try {
             var select = (PlainSelect) CCJSqlParserUtil.parse(sql);
             // 射影はサポートしない (*のみ)
@@ -70,6 +74,7 @@ public class CsvStatement implements Statement {
 
     @Override
     public void close() throws SQLException {
+        LOGGER.info("CsvStatement#close");
         try {
             csvParser.close();
         } catch (IOException e) {

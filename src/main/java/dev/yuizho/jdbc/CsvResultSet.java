@@ -1,6 +1,8 @@
 package dev.yuizho.jdbc;
 
 import org.apache.commons.csv.CSVRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.InputStream;
 import java.io.Reader;
@@ -13,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CsvResultSet implements ResultSet {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CsvResultSet.class);
     private final Iterator<CSVRecord> records;
     private final int columnCount;
     private CSVRecord current;
@@ -24,6 +27,7 @@ public class CsvResultSet implements ResultSet {
 
     @Override
     public boolean next() throws SQLException {
+        LOGGER.info("CsvResultSet#next");
         var result = this.records.hasNext();
 
         if (result) {
@@ -35,6 +39,8 @@ public class CsvResultSet implements ResultSet {
 
     @Override
     public String getString(int columnIndex) throws SQLException {
+        LOGGER.info("CsvResultSet#getString");
+
         // TODO: validation
 
         return current.get(columnIndex - 1);
@@ -42,11 +48,17 @@ public class CsvResultSet implements ResultSet {
 
     @Override
     public Object getObject(int columnIndex) throws SQLException {
+        LOGGER.info("CsvResultSet#getObject");
+
+        // TODO: validation
+
         return getString(columnIndex);
     }
 
     @Override
     public ResultSetMetaData getMetaData() throws SQLException {
+        LOGGER.info("CsvResultSet#getMetaData");
+
         return new CsvResultSetMetaData(this.columnCount);
     }
 

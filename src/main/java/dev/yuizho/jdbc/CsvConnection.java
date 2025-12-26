@@ -1,5 +1,8 @@
 package dev.yuizho.jdbc;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
@@ -8,6 +11,7 @@ import java.util.Properties;
 import java.util.concurrent.Executor;
 
 public class CsvConnection implements Connection {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CsvConnection.class);
     private final InputStream is;
 
     public CsvConnection(String url) {
@@ -16,11 +20,13 @@ public class CsvConnection implements Connection {
 
     @Override
     public Statement createStatement() throws SQLException {
+        LOGGER.info("CsvConnection#createStatement");
         return new CsvStatement(this.is);
     }
 
     @Override
     public void close() throws SQLException {
+        LOGGER.info("CsvConnection#close");
         try {
             is.close();
         } catch (IOException e) {
