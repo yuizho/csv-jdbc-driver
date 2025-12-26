@@ -5,7 +5,7 @@ import java.util.Properties;
 import java.util.logging.Logger;
 
 public class CsvDriver implements Driver {
-    private static final String EXPECTED_URL_PREFIX = "jdbc://";
+    private static final String EXPECTED_URL_PREFIX = "jdbc:classpath://";
 
     @Override
     public Connection connect(String url, Properties info) throws SQLException {

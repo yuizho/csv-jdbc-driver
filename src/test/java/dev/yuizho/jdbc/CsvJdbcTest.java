@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class CsvJdbcTest {
     @Test
     void readAllRecords() throws SQLException {
-        try (var conn = new CsvDriver().connect("jdbc://demo.csv", null);) {
+        try (var conn = new CsvDriver().connect("jdbc:classpath://demo.csv", null);) {
             try (var stmt = conn.createStatement();) {
                 var resultSet = stmt.executeQuery("select * from demo");
                 var size = 0;
@@ -29,7 +29,7 @@ public class CsvJdbcTest {
 
     @Test
     void readFirstRecordByWhereExpression() throws SQLException {
-        try (var conn = new CsvDriver().connect("jdbc://demo.csv", null);) {
+        try (var conn = new CsvDriver().connect("jdbc:classpath://demo.csv", null);) {
             try (var stmt = conn.createStatement();) {
                 var resultSet = stmt.executeQuery("select * from demo where id = 1");
                 var size = 0;
@@ -47,9 +47,9 @@ public class CsvJdbcTest {
 
     @Test
     void readRecordsByWhereExpression() throws SQLException {
-        try (var conn = new CsvDriver().connect("jdbc://demo.csv", null);) {
+        try (var conn = new CsvDriver().connect("jdbc:classpath://demo.csv", null);) {
             try (var stmt = conn.createStatement();) {
-                var resultSet = stmt.executeQuery("select * from demo where city = 'Independence'");
+              var resultSet = stmt.executeQuery("select * from demo where city = 'Independence'");
                 var size = 0;
                 var actualIds = new ArrayList<>();
                 while (resultSet.next()) {
