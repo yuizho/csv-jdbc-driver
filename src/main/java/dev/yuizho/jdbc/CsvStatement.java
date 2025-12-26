@@ -1,5 +1,10 @@
 package dev.yuizho.jdbc;
 
+import net.sf.jsqlparser.JSQLParserException;
+import net.sf.jsqlparser.expression.operators.relational.EqualsTo;
+import net.sf.jsqlparser.parser.CCJSqlParserUtil;
+import net.sf.jsqlparser.schema.Column;
+import net.sf.jsqlparser.statement.select.PlainSelect;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 
@@ -7,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
+import java.util.Optional;
 
 public class CsvStatement implements Statement {
     private final CSVParser csvParser;
@@ -30,9 +36,36 @@ public class CsvStatement implements Statement {
 
     @Override
     public ResultSet executeQuery(String sql) throws SQLException {
-        // TODO: SQLの内容をパースしてうまいことやる
-        int columnCount = this.csvParser.getHeaderNames().size();
-        return new CsvResultSet(this.csvParser.getRecords(), columnCount);
+        try {
+            var select = (PlainSelect) CCJSqlParserUtil.parse(sql);
+            // 射影はサポートしない (*のみ)
+            // table名は使わない (ファイル名がtableに該当するので)
+            // 条件は単一の"="のみサポート
+            var where = Optional.ofNullable((EqualsTo) select.getWhere());
+            var records = where.map(w -> {
+                var left = w.getLeftExpression();
+                var right = w.getRightExpression();
+                // 1 = 1みたいなのは未サポート
+                var conditionColumnName = "";
+                if (left instanceof Column) {
+                    conditionColumnName = ((Column) left).getColumnName();
+                }
+                var condition = new Condition(
+                        conditionColumnName,
+                        right.toString().replaceAll("'(.*?)'", "$1")
+                );
+                return this.csvParser
+                        .getRecords()
+                        .stream()
+                        .filter(r -> r.get(condition.colName()).equals(condition.value()))
+                        .toList();
+            }).orElseGet(this.csvParser::getRecords);
+
+            int columnCount = this.csvParser.getHeaderNames().size();
+            return new CsvResultSet(records, columnCount);
+        } catch (JSQLParserException e) {
+            throw new SQLException(e);
+        }
     }
 
     @Override
