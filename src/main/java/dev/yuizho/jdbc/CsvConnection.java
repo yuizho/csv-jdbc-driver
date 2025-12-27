@@ -3,8 +3,6 @@ package dev.yuizho.jdbc;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.sql.*;
 import java.util.Map;
 import java.util.Properties;
@@ -12,26 +10,22 @@ import java.util.concurrent.Executor;
 
 public class CsvConnection implements Connection {
     private static final Logger LOGGER = LoggerFactory.getLogger(CsvConnection.class);
-    private final InputStream is;
+    private final String url;
 
     public CsvConnection(String url) {
-        this.is = CsvConnection.class.getClassLoader().getResourceAsStream(url);
+        this.url = url;
     }
 
     @Override
     public Statement createStatement() throws SQLException {
         LOGGER.info("CsvConnection#createStatement");
-        return new CsvStatement(this.is);
+        var is = CsvConnection.class.getClassLoader().getResourceAsStream(this.url);
+        return new CsvStatement(is);
     }
 
     @Override
     public void close() throws SQLException {
         LOGGER.info("CsvConnection#close");
-        try {
-            is.close();
-        } catch (IOException e) {
-            throw new SQLException(e);
-        }
     }
 
     @Override
