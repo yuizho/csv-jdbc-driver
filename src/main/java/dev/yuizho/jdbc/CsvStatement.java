@@ -50,19 +50,19 @@ public class CsvStatement implements Statement {
                 var left = w.getLeftExpression();
                 var right = w.getRightExpression();
                 // 1 = 1みたいなのは未サポート
-                var conditionColumnName = "";
                 if (left instanceof Column) {
-                    conditionColumnName = ((Column) left).getColumnName();
+                    var condition = new Condition(
+                            ((Column) left).getColumnName(),
+                            right.toString().replaceAll("'(.*?)'", "$1")
+                    );
+                    return this.csvParser
+                            .getRecords()
+                            .stream()
+                            .filter(r -> r.get(condition.colName()).equals(condition.value()))
+                            .toList();
+                } else {
+                    return this.csvParser.getRecords();
                 }
-                var condition = new Condition(
-                        conditionColumnName,
-                        right.toString().replaceAll("'(.*?)'", "$1")
-                );
-                return this.csvParser
-                        .getRecords()
-                        .stream()
-                        .filter(r -> r.get(condition.colName()).equals(condition.value()))
-                        .toList();
             }).orElseGet(this.csvParser::getRecords);
 
             int columnCount = this.csvParser.getHeaderNames().size();
