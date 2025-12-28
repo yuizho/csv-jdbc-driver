@@ -7,22 +7,28 @@ import java.sql.*;
 import java.util.Properties;
 
 public class CsvDriver implements Driver {
-    private static final String EXPECTED_URL_PREFIX = "jdbc:classpath://";
     private static final Logger LOGGER = LoggerFactory.getLogger(CsvDriver.class);
 
     @Override
     public Connection connect(String url, Properties info) throws SQLException {
         LOGGER.info("CsvDriver#connect");
-        if (!url.startsWith(EXPECTED_URL_PREFIX)) {
-            throw new IllegalArgumentException("urlはjdbc:classpath://形式で入力してください。");
+        if (url.startsWith(ClasspathCsvConnection.URL_PREFIX)) {
+            return new ClasspathCsvConnection(url);
+        } else if (url.startsWith(FileCsvConnection.URL_PREFIX)) {
+            return new FileCsvConnection(url);
+        } else {
+            throw new IllegalArgumentException(
+                    String.format(
+                            "urlは%sで始まる形式で入力してください。",
+                            ClasspathCsvConnection.URL_PREFIX
+                    )
+            );
         }
-
-        return new CsvConnection(url.replace(EXPECTED_URL_PREFIX, ""));
     }
 
     @Override
     public boolean acceptsURL(String url) throws SQLException {
-        return url.startsWith(EXPECTED_URL_PREFIX);
+        return url.startsWith(ClasspathCsvConnection.URL_PREFIX) || url.startsWith(FileCsvConnection.URL_PREFIX);
     }
 
     @Override

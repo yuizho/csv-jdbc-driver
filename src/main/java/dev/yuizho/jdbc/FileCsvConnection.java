@@ -3,33 +3,44 @@ package dev.yuizho.jdbc;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.*;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
 
-public class CsvConnection implements Connection {
-    private static final Logger LOGGER = LoggerFactory.getLogger(CsvConnection.class);
+public class FileCsvConnection implements Connection {
+    public static final String URL_PREFIX = "jdbc:file://";
+    private static final Logger LOGGER = LoggerFactory.getLogger(FileCsvConnection.class);
     private final String url;
 
-    public CsvConnection(String url) {
-        this.url = url;
+    public FileCsvConnection(String url) {
+        this.url = url.replace(URL_PREFIX, "");
     }
 
     @Override
     public Statement createStatement() throws SQLException {
-        LOGGER.info("CsvConnection#createStatement");
-        var is = CsvConnection.class.getClassLoader().getResourceAsStream(this.url);
-        return new CsvStatement(is);
+        LOGGER.info("FileCsvConnection#createStatement");
+        var path = Path.of(this.url);
+        try {
+            var is = Files.newInputStream(path);
+            return new CsvStatement(is);
+        } catch (IOException e) {
+            throw new SQLException(e);
+        }
     }
 
     @Override
     public void close() throws SQLException {
-        LOGGER.info("CsvConnection#close");
+        LOGGER.info("FileCsvConnection#close");
     }
 
     @Override
     public boolean isValid(int timeout) throws SQLException {
+        LOGGER.info("FileCsvConnection#isValid");
         // TODO: コネクションプール向けにインチキして常にtrue返してる。ちゃんとやるならファイルが読める状態化とかを調べる。
 
         return true;
@@ -37,6 +48,7 @@ public class CsvConnection implements Connection {
 
     @Override
     public boolean isReadOnly() throws SQLException {
+        LOGGER.info("FileCsvConnection#isReadOnly");
         // コネクションプール向けにインチキして常にtrue返してる。
 
         return true;
@@ -44,16 +56,19 @@ public class CsvConnection implements Connection {
 
     @Override
     public void setReadOnly(boolean readOnly) throws SQLException {
+        LOGGER.info("FileCsvConnection#setReadOnly");
         // コネクションプール向けにインチキしてなにもしない
     }
 
     @Override
     public boolean getAutoCommit() throws SQLException {
+        LOGGER.info("FileCsvConnection#getAutoCommit");
         return true;
     }
 
     @Override
     public int getTransactionIsolation() throws SQLException {
+        LOGGER.info("FileCsvConnection#getTransactionIsolation");
         return Connection.TRANSACTION_NONE;
     }
 
