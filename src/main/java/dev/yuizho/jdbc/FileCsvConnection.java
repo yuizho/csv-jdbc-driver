@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.*;
@@ -36,6 +35,11 @@ public class FileCsvConnection implements Connection {
     @Override
     public void close() throws SQLException {
         LOGGER.info("FileCsvConnection#close");
+    }
+
+    @Override
+    public DatabaseMetaData getMetaData() throws SQLException {
+        return new CsvDatabaseMetaData();
     }
 
     @Override
@@ -104,11 +108,6 @@ public class FileCsvConnection implements Connection {
 
     @Override
     public void rollback() throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public DatabaseMetaData getMetaData() throws SQLException {
         throw new UnsupportedOperationException();
     }
 
