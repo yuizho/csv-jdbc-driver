@@ -1,9 +1,12 @@
 package dev.yuizho.jdbc;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.*;
@@ -39,7 +42,41 @@ public class FileCsvConnection implements Connection {
 
     @Override
     public DatabaseMetaData getMetaData() throws SQLException {
-        return new CsvDatabaseMetaData();
+        var path = Path.of(this.url);
+        var fileName = path.getFileName().toString().replace(".csv", "");
+        System.out.println(fileName);
+        try (var is = Files.newInputStream(path)) {
+            CSVFormat format = CSVFormat.DEFAULT.builder()
+                    .setHeader()                // ヘッダーがあることを指定（1行目をヘッダーとして認識）
+                    .setSkipHeaderRecord(true)  // ヘッダー行をレコードのループ処理に含めない
+                    .build();
+            var csv = CSVParser.parse(
+                    is,
+                    StandardCharsets.UTF_8,
+                    format
+            );
+
+            return new CsvDatabaseMetaData(
+                    new Table(
+                            "",
+                            "",
+                            fileName,
+                            "TABLE",
+                            ""
+                    ),
+                    csv.getHeaderNames()
+                            .stream()
+                            .map(name -> new Column(
+                                    fileName,
+                                    name,
+                                    Types.VARCHAR,
+                                    "String"
+                            ))
+                            .toList()
+            );
+        } catch (IOException e) {
+            throw new SQLException(e);
+        }
     }
 
     @Override

@@ -1,8 +1,17 @@
 package dev.yuizho.jdbc;
 
 import java.sql.*;
+import java.util.List;
 
 public class CsvDatabaseMetaData implements DatabaseMetaData {
+    private final Table table;
+    private final List<Column> columns;
+
+    public CsvDatabaseMetaData(Table table, List<Column> columns) {
+        this.table = table;
+        this.columns = columns;
+    }
+
     @Override
     public boolean allTablesAreSelectable() throws SQLException {
         return true;
@@ -10,12 +19,12 @@ public class CsvDatabaseMetaData implements DatabaseMetaData {
 
     @Override
     public ResultSet getTables(String catalog, String schemaPattern, String tableNamePattern, String[] types) throws SQLException {
-        return null;
+        return new TableResultSet(this.table);
     }
 
     @Override
     public ResultSet getColumns(String catalog, String schemaPattern, String tableNamePattern, String columnNamePattern) throws SQLException {
-        return null;
+        return new ColumnResultSet(this.columns);
     }
 
     @Override
