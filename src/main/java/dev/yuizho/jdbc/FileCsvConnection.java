@@ -70,7 +70,7 @@ public class FileCsvConnection implements Connection {
                                     fileName,
                                     name,
                                     Types.VARCHAR,
-                                    "String"
+                                    "VARCHAR"
                             ))
                             .toList()
             );

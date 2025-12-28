@@ -64,7 +64,6 @@ public class CsvResultSet implements ResultSet {
 
     @Override
     public void close() throws SQLException {
-        throw new UnsupportedOperationException();
     }
 
     @Override

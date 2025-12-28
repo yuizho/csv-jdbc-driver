@@ -19,6 +19,7 @@ import java.util.Optional;
 public class CsvStatement implements Statement {
     private static final Logger LOGGER = LoggerFactory.getLogger(CsvStatement.class);
     private final CSVParser csvParser;
+    private ResultSet resultSet;
 
     public CsvStatement(InputStream is) {
         try {
@@ -73,6 +74,17 @@ public class CsvStatement implements Statement {
     }
 
     @Override
+    public boolean execute(String sql) throws SQLException {
+        this.resultSet = executeQuery(sql);
+        return true;
+    }
+
+    @Override
+    public ResultSet getResultSet() throws SQLException {
+        return this.resultSet;
+    }
+
+    @Override
     public void close() throws SQLException {
         LOGGER.info("CsvStatement#close");
         try {
@@ -104,7 +116,6 @@ public class CsvStatement implements Statement {
 
     @Override
     public void setMaxRows(int max) throws SQLException {
-        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -139,16 +150,6 @@ public class CsvStatement implements Statement {
 
     @Override
     public void setCursorName(String name) throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public boolean execute(String sql) throws SQLException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public ResultSet getResultSet() throws SQLException {
         throw new UnsupportedOperationException();
     }
 
