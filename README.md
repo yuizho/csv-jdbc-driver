@@ -50,12 +50,38 @@ try (Connection conn = DriverManager.getConnection("jdbc:classpath://demo.csv");
 *   **SQL解析**: [JSQLParser](https://github.com/JSQLParser/JSqlParser) を使用して `SELECT` 文を解析し、条件抽出を行います。
 *   **CSV解析**: [Apache Commons CSV](https://commons.apache.org/proper/commons-csv/) を使用してCSVファイルの読み込みとレコード解析を行います。
 
-### コンポーネント
+### 主要クラス
 
 *   **CsvDriver**: JDBCドライバのエントリーポイント。URLスキーム（`jdbc:classpath://`, `jdbc:file://`）に応じて適切なConnectionを生成します。
 *   **CsvConnection**: 接続情報（CSVファイルのパスなど）を保持します。
     *   **実装のポイント**: 一般的なRDBMS（MySQLなど）向けのドライバの `Connection` はサーバーとの通信Socketを維持し続けますが、本ドライバが扱うファイルストリームは一度使うと再利用できません。そのため、`Connection` でストリームを保持し続けるのではなく、クエリ実行のたびに都度ファイルを開くようになっています。
 *   **CsvStatement**: SQLを受け取り、CSVレコードをストリーム処理でフィルタリングして `ResultSet` を返します。データはメモリに全展開せず、ストリーム処理されます（ただし、実装の都合上、一部の操作でメモリに展開される場合があります）。
+
+一般的なJDBCアプリケーションにおける主要クラスの関係性を、本ドライバのコンポーネントに当てはめて図示します。
+
+```
+[アプリケーション]
+       ↓ (1. DriverManager.getConnection(url))
++-----------------+
+| DriverManager   |
+| (CsvDriverをロード) |
++--------+--------+
+         ↓ (2. CsvDriver.connect(url))
++-----------------+
+| CsvConnection   |
+| (ファイルパス管理) |
++--------+--------+
+         ↓ (3. Connection.createStatement())
++-----------------+
+| CsvStatement    |
+| (SQL解析, フィルタリング) |
++--------+--------+
+         ↓ (4. Statement.executeQuery(sql))
++-----------------+
+| CsvResultSet    |
+| (結果データ)     |
++-----------------+
+```
 
 ## 制限事項
 
