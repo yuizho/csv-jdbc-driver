@@ -53,7 +53,8 @@ try (Connection conn = DriverManager.getConnection("jdbc:classpath://demo.csv");
 ### コンポーネント
 
 *   **CsvDriver**: JDBCドライバのエントリーポイント。URLスキーム（`jdbc:classpath://`, `jdbc:file://`）に応じて適切なConnectionを生成します。
-*   **CsvConnection**: CSVファイルへの入力ストリームを管理します。
+*   **CsvConnection**: 接続情報（CSVファイルのパスなど）を保持します。
+    *   **実装のポイント**: 一般的なRDBMS（MySQLなど）のドライバとは異なり、**ソケット通信（Socket）は保持しません**。MySQL等の `Connection` はサーバーとの通信パイプ（土管）を維持し続けますが、本ドライバが扱うファイルストリームは一度読み切ると再利用できない「使い切り（巻物）」の性質を持ちます。そのため、`Connection` でストリームを保持し続けるのではなく、クエリ実行のたびに都度ファイルを開く設計になっています。
 *   **CsvStatement**: SQLを受け取り、CSVレコードをストリーム処理でフィルタリングして `ResultSet` を返します。データはメモリに全展開せず、ストリーム処理されます（ただし、実装の都合上、一部の操作でメモリに展開される場合があります）。
 
 ## 制限事項
@@ -62,13 +63,14 @@ try (Connection conn = DriverManager.getConnection("jdbc:classpath://demo.csv");
 
 ### SQLクエリの制限 (`CsvStatement#executeQuery`)
 
-*   **射影 (Projection)**: `SELECT *` のみがサポートされています。特定のカラム指定（例: `SELECT id, name ...`）は動作しません。
-*   **テーブル名**: SQL構文上は必要ですが、ドライバ内部では無視されます（接続時に指定したCSVファイルが常に使用されます）。
+*   **SELECT句**: `SELECT *` のみがサポートされています。射影 (例: `SELECT id, name ...`) は動作しません。
+*   **FROM句**: SQL構文上は必要ですが、ドライバ内部では無視されます（接続時に指定したCSVファイルが常に使用されます）。
 *   **WHERE句**:
     *   単一の `=` (等価比較) のみがサポートされています。
     *   左辺はカラム名、右辺は文字列リテラルである必要があります。
     *   `AND`, `OR`, `LIKE`, 不等号などはサポートされていません。
     *   `WHERE 1 = 1` のような定数式はサポートされていません。
+*   **その他**: 全然対応していません。
     
 ### その他の制限
 
@@ -77,3 +79,4 @@ try (Connection conn = DriverManager.getConnection("jdbc:classpath://demo.csv");
 *   **PreparedStatement**: サポートされていません。
 *   **トランザクション**: サポートされていません（常にオートコミット扱い）。
 *   **メタデータ**: `jdbc:file://` 接続時のみ簡易的なメタデータ取得が可能ですが、不完全です。
+    * 不完全ですが最低限 DBeaver などのSQLクライアントで使えるくらいのメソッドは実装しています
