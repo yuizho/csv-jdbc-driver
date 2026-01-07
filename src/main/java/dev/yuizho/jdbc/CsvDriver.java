@@ -19,8 +19,9 @@ public class CsvDriver implements Driver {
         } else {
             throw new IllegalArgumentException(
                     String.format(
-                            "urlは%sで始まる形式で入力してください。",
-                            ClasspathCsvConnection.URL_PREFIX
+                            "urlは %s or %s で始まる形式で入力してください。",
+                            ClasspathCsvConnection.URL_PREFIX,
+                            FileCsvConnection.URL_PREFIX
                     )
             );
         }
